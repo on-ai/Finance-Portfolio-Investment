@@ -37,7 +37,7 @@ Using a **LSTM** Neural Network does not provide better results. There is one pa
 ![Portfolio LSTM 'AAPL'](./pictures/lstm_apple_price_history.png "Portfolio LSTM 'AAPL'")<br><br>
 ![Portfolio LSTM 'AAPL'](./pictures/lstm_with_predictions.png "Portfolio LSTM 'AAPL'")<br><br>
 
-## 3. Using  a LLM approach
+## 3. Using  a LLM approach bringing up GPT2
 
 For again the AAPL stock, we are going to use a third approach using GPT<br>
 
@@ -45,3 +45,6 @@ For again the AAPL stock, we are going to use a third approach using GPT<br>
 * The historical stocks are used to fine-tune le model<br>
 * Eventually this model is used to estimate the future stock prices<br><br><br>
 ![Portfolio LSTM 'AAPL'](./pictures/lstm_apple_price_history.png "Portfolio LSTM 'AAPL'")<br><br>
+
+## 4. Using a LLM approach calling OpenAI
+
