@@ -1,21 +1,24 @@
 # Finance-Portfolio-Investment
 
-* This project will exercise some Machine Learning algorithms to decide when to invest and anticipate a stock value<br><br>
-* The stock value will be estimated using first a Deep Learning LSTM model, and next a Deep Learnin LLM model<br><br>
+This project exercises different Machine Learning algorithms to challenge the prediction of a stock value. Apple is the stock of choice<br><br>
+The stock value is estimated using:
+
+## 1. A **Rolling** method to estimate a stock value using its history 2 days ago, a week, 3 months and 4 years ago<br>
+
+## 2. **LSTM**, a Recurrent Neural Network Deep Learning algorithm, addressing typical Gradient problems using standard RNNs. The model is defined manually, i.e. its number of layers, nodes and loss function<br>
+
+## 3. **GPT2**, another Deep Learning algorithm based on the **Transformers** architecture, without getting bogged by sequential data processing<br>
+
+## 4. **OpenAI**, to exercise another way to extract a GPT2 model<br><br><rb>
+
+<hr style="border:4px solid gray">
 
 ## 1. Probability we can guess the trend of a stock at a given date
 
-### Overall trend for several NASDAQ Stocks
-
-![Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'](./pictures/portfolio01GOOG.png "Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'")<br><br>
-![Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'](./pictures/portfolio01AMZN.png "Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'")<br><br>
-![Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'](./pictures/portfolio01MSFT.png "Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'")<br><br>
-![Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'](./pictures/portfolio01TSLA.png "Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'")<br><br>
-
-### Collect stocks of a given stock APPL <br>
+### Collect stocks of a given stock AAPL <br>
 
 ![Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'](./pictures/portfolio01List.png "Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'")<br><br>
-![Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'](./pictures/portfolio01APPL.png "Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'")<br><br>
+![Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'](./pictures/portfolio01AAPL.png "Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'")<br><br>
 
 ### Define a Target Variable based on the tomorrow value <br>
 
@@ -44,7 +47,6 @@ For again the AAPL stock, we are going to use a third approach using GPT<br>
 * A **GPT-2** tokenizer and pre-trained model are extracted from a **transformers** library<br>
 * The historical stocks are used to fine-tune le model<br>
 * Eventually this model is used to estimate the future stock prices<br><br><br>
-![Portfolio LSTM 'AAPL'](./pictures/lstm_apple_price_history.png "Portfolio LSTM 'AAPL'")<br><br>
+![Portfolio GPT2 'AAPL'](./pictures/GPT_HistoricalvsPredictedStocks.png "Portfolio LSTM 'AAPL'")<br><br>
 
 ## 4. Using a LLM approach calling OpenAI
-
