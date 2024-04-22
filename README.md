@@ -9,7 +9,7 @@ The stock value is estimated using:
 
 ## 3. **GPT2**, another Deep Learning algorithm based on the **Transformers** architecture, without getting bogged by sequential data processing<br>
 
-## 4. **OpenAI**, to exercise another way to extract a GPT2 model<br><br><rb>
+<br><rb>
 
 <hr style="border:4px solid gray">
 
@@ -33,7 +33,7 @@ The rolling method is useful calculating moving averages or other rolling window
 ![Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'](./pictures/portfolio03List.png "Portfolio 'AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA'")<br><br>
 For APPL, we improve from 51.9% to 53.8% with a probability of 60% to be correct, by using a backtest using up to several months of resuls<br>
 
-## 2. Predict a stock value at a given date
+## 2. Predict a stock value at a given date using the LSTM Deep Learning Model
 
 Using a **LSTM** Neural Network does not provide better results. There is one path to consider, which is to look at the market opened before the USA, like in Japan or London, or the CAC40<br><br>
 ![Portfolio LSTM 'AAPL'](./pictures/lstm_apple_excerpt.png "Portfolio LSTM 'AAPL'")<br><br>
@@ -49,4 +49,3 @@ For again the AAPL stock, we are going to use a third approach using GPT<br>
 * Eventually this model is used to estimate the future stock prices<br><br><br>
 ![Portfolio GPT2 'AAPL'](./pictures/GPT_HistoricalvsPredictedStocks.png "Portfolio LSTM 'AAPL'")<br><br>
 
-## 4. Using a LLM approach calling OpenAI
